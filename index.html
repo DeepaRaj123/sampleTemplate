@@ -27,26 +27,44 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">What we do</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">What we do</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Sectors & Services</a>
+                        <div class="btn-group">
+                          
+                            <ul class="navbar-nav">
+   
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Sectors & Services
+                                  </a>
+                                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Corporates</a></li>
+                                    <li><a class="dropdown-item" href="#">Institutions</a></li>
+                                    <li><a class="dropdown-item" href="#">Individuals</a></li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">Fashion Industry</a>
+                                      <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Textile Industry</a></li>
+                                        <li><a class="dropdown-item" href="#">Apparel Manufactures</a></li>
+                                        <li><a class="dropdown-item" href="#">Chemical and Dye Manufactures</a></li>
+                                        <li><a class="dropdown-item" href="#">Retailers and Individuals</a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                         </div>                    </li>
+                 
+                    <li class="nav-item">
+                        <a class="nav-link" href="404.html">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testmonial">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Individuals</a>
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item ml-md-4">
-                        <a class="nav-link" href="components.html">Testimonials</a>
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
                     </li>
                     <li class="nav-item ml-md-4">
-                        <a class="nav-link" href="components.html">Contact Us</a>
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -55,7 +73,7 @@
     
 
     <!-- Page Header -->
-    <header id="home" class="header">
+    <header id="home" class="header" style="background:url(assets/imgs/header.jpg);">
         <div class="overlay"></div>
         <div class="header-content">
             <h6>Zero in on Net Zero</h6> 
@@ -64,31 +82,31 @@
         </div>      
     </header><!-- End of Page Header -->    
     
-    <!-- About Section -->
-    <section id="about">
-        <!-- Container -->
-        <div class="container">
-            <!-- About wrapper -->
-            <div class="about-wrapper">
-                <div class="after"><h1>About Us</h1></div>
-                <div class="content">
-                    <h5 class="title mb-3">Why Sustainability?</h5>
-                    <!-- row -->
-                    <div class="row">
+        <!-- Section -->
+        <section>
+            <!-- Container -->
+            <div class="container">
+                <!-- Row -->
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-6">
+                        <div class="img-wrapper">
+                            <div class="after"></div>
+                            <img src="assets/imgs/about.png" class="w-100" alt="About us">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
                         <div class="col">
+                            <h5 class="title mb-3">Why Sustainability?</h5>
+    
                             <p>It’s high time we realize and take responsibility for the impact we thrust on the environment by the way we conduct business, educate our society and lead our life. Implementing sustainability in everything we do is the only way forward to efficiently meet the needs of our present and future.</p>
                             <p>we help businesses, institutions and individuals adopt sustainability and produce measurable economic, environmental and social benefits at scale.</p>
                             <p>We do this by leveraging our thought leadership on Sustainability, pragmatic approach, proven tools and network of experts & associations who focus on net-zero.</p>
                         </div>
-                        <div class="col">
-                            <img src="assets/imgs/aboutus.png" width="100%" height="100%" alt="About Us">
-                        </div>
-                    </div><!-- End of Row -->                   
-                    <a href="javascript:void(0)">Read More...</a>
-                </div>
-            </div><!-- End of About Wrapper -->         
-        </div>  <!-- End of Container-->        
-     </section><!--End of Section -->
+                        <button class="btn btn-outline-primary btn-sm">Learn More</button>
+                    </div>
+                </div><!-- End of Row -->           
+            </div><!-- End of Container-->      
+        </section><!-- End of Section -->   
 
 
         <!-- Features Section -->
@@ -217,29 +235,7 @@
 
  
 
-    <!-- Section -->
-    <section>
-        <!-- Container -->
-        <div class="container">
-            <!-- Row -->
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md-6">
-                    <div class="img-wrapper">
-                        <div class="after"></div>
-                        <img src="assets/imgs/about.png" class="w-100" alt="About us">
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="col">
-                        <p>It’s high time we realize and take responsibility for the impact we thrust on the environment by the way we conduct business, educate our society and lead our life. Implementing sustainability in everything we do is the only way forward to efficiently meet the needs of our present and future.</p>
-                        <p>we help businesses, institutions and individuals adopt sustainability and produce measurable economic, environmental and social benefits at scale.</p>
-                        <p>We do this by leveraging our thought leadership on Sustainability, pragmatic approach, proven tools and network of experts & associations who focus on net-zero.</p>
-                    </div>
-                    <button class="btn btn-outline-primary btn-sm">Learn More</button>
-                </div>
-            </div><!-- End of Row -->           
-        </div><!-- End of Container-->      
-    </section><!-- End of Section -->   
+
 
     <!-- Testmonial Section -->
     <section class="text-center pt-5" id="testmonial">
@@ -309,10 +305,17 @@
        <!-- Contact Section -->
        <section id="contact" class="text-center">
         <div class="container">
-            <h1>Let’s build a Sustainable Future, Together!</h1>  
-            <div class="form-group" id="announcementButton">
-                <button  class="btn btn-primary rounded"><i class="ti-announcement pr-1"></i>Speak to our sustainability Team</button>
-            </div>   
+            <h1>Let’s build a Sustainable Future, Together!</h1> 
+            <h6>In a fast-changing world, let’s play our role in building a sustainable future. Subscribe to our curated Insights on practising sustainability every month.</h6> 
+            <div class="form-row">
+               
+                <div class="col form-group">
+                    <input style="height: 80px;" type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-block"  value="Subscribe">
+                </div>
+            </div>  
         </div>    
     </section>
     
