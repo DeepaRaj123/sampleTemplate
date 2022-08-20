@@ -2771,13 +2771,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #212529;
+  color: #FFFFFF;
   background-color: #A8D92E;
   border-color: #A8D92E;
+  width: 100%;
+  height: 100px;
 }
 
 .btn-primary:hover {
-  color: #212529;
+  color: #FFFFFF;
   background-color: #f9c807;
   border-color: #edbe06;
 }
@@ -3337,6 +3339,8 @@ fieldset:disabled a.btn {
 .btn-block {
   display: block;
   width: 100%;
+  height:80px;
+  color: white;
 }
 
 .btn-block + .btn-block {
