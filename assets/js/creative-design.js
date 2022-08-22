@@ -39,14 +39,14 @@ const testimonials = [
 	{
 		name: "Vivek Mahajan",
 		job: "Larimars Clothing Toronto,Canada",
-		image: "/assets/imgs/avatar1.png",
+		image: "./assets/imgs/avatar1.png",
 		testimonial:
 			"The team at Mindfully sustainable is very well versed and helped setting up systems to achieve our sustainable goals. We got on board with the team to help our small apparel manufacturing setup to reduce its carbon foot print and reduce wastage so it can either be repurposed or upscaled. We have seen a significant change in how small but very useful techniques when implemented correctly can contribute to the greater cause of value addition, helps being compliant with circular ideology and putting positive contribution to the community. Thank you again for your help and would highly recommend using their services."
 	},
 	{
 		name: "Farah Alam",
 		job: "QA/Test Engineer Dartford,UK",
-		image: "/assets/imgs/avatar1.png",
+		image: "./assets/imgs/avatar1.png",
 		testimonial:
 			"Anamika is an amazing consultant and a thorough professional. She has helped and guided us through the process, to becoming completely sustainable in terms and f our food habits, lifestyle and fashion. We can feel the difference it has made in the quality of our life. It has become healthy, enjoyable and stress & guilt free."
 	}

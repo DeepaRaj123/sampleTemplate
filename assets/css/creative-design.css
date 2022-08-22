@@ -11086,6 +11086,7 @@ nav.page-navbar .nav-item .btn {
     opacity: 0;
     -webkit-transition: all 0.3s linear 0s;
     transition: all 0.3s linear 0s;
+    background-color: white;
   }
   nav.page-navbar .navbar-collapse.show {
     height: auto;
@@ -11330,6 +11331,14 @@ section.has-bg-img5 {
   text-align: center;
 }
 
+section.has-bg-img7 {
+  background-image: url(../imgs/fashionfooterbg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  position: relative;
+  text-align: center;
+}
 
 .fashionImage {
   background-size: cover;
@@ -11648,6 +11657,53 @@ color: white;
 }
 
 
+/* fashionBrands */
+.fashionBrands-wrapper {
+  background: linear-gradient(lightblue 50%, #ffffff 50%);;
+  box-shadow: 0 2px 5px 0 rgba(173, 181, 189, 0.4) !important;
+  border-radius: 20rem;
+  padding: 0 20px 20px;
+  margin-bottom: 60px;
+  height: 150px;
+  width: 75%;
+}
+
+.fashionBrands-wrapper:hover {
+  background: linear-gradient(lightblue 50%, lightblue 50%);
+  background-size: 100% 200%;
+  box-shadow: 0 2px 5px 0 rgba(173, 181, 189, 0.4) !important;
+  border-radius: 0.2rem;
+  padding: 0 20px 20px;
+  margin-bottom: 60px;
+  height: 140px;
+  transition: 0.5s;
+}
+
+.fashionBrands-wrapper:hover .title {
+color: white;
+}
+
+.fashionBrands-wrapper:hover p {
+  color: white;
+  }
+  
+
+.fashionBrands-wrapper img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  -webkit-transform: translateY(-45px);
+      -ms-transform: translateY(-45px);
+          transform: translateY(-45px);
+  background: white;
+  padding: 5px;
+}
+
+.fashionBrands-wrapper .title {
+  margin-top: -40px;
+}
+
 /* corporates-services */
 .corporates-services-wrapper {
   background: var(--gray-dark);
@@ -11709,7 +11765,7 @@ color: white;
   border-radius: 10rem;
   padding: 0 20px 20px;
   margin-bottom: 60px;
-  height: 200px;
+  height: 220px;
   color: black;
 }
 
@@ -11720,7 +11776,7 @@ color: white;
   border-radius: 20rem;
   padding: 0 20px 20px;
   margin-bottom: 60px;
-  height: 190px;
+  height: 210px;
   transition: 0.5s;
 }
 

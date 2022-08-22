@@ -46,9 +46,9 @@
                                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="fashionIndustry.html">Fashion Industry</a>
                                         <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="textiles.html">Textile Industry</a></li>
-                                        <li><a class="dropdown-item" href="#">Apparel Manufactures</a></li>
-                                        <li><a class="dropdown-item" href="#">Chemical and Dye Manufactures</a></li>
-                                        <li><a class="dropdown-item" href="#">Retailers and Individuals</a></li>
+                                        <li><a class="dropdown-item" href="apparaels.html">Apparel Manufactures</a></li>
+                                        <li><a class="dropdown-item" href="chemicals.html">Chemical and Dye Manufactures</a></li>
+                                        <li><a class="dropdown-item" href="retailers.html">Retailers and Individuals</a></li>
                                       </ul>
                                     </li>
                                   </ul>
@@ -78,7 +78,7 @@
         <div class="header-content">
             <h6>Zero in on Net Zero</h6> 
             <p>With our Holistic Sustainable Consulting, we help individuals, businesses, governments, and non-governmental organizations across sectors in defining and realizing their sustainability goals. </p>
-            <button class="btn btn-outline-light">Join With Us</button> 
+            <button onclick="changescreentoContact()" class="btn btn-outline-light">Join With Us</button> 
         </div>      
     </header><!-- End of Page Header -->    
     
@@ -102,7 +102,7 @@
                             <p>we help businesses, institutions and individuals adopt sustainability and produce measurable economic, environmental and social benefits at scale.</p>
                             <p>We do this by leveraging our thought leadership on Sustainability, pragmatic approach, proven tools and network of experts & associations who focus on net-zero.</p>
                         </div>
-                        <button class="btn btn-outline-primary btn-sm">Learn More</button>
+                        <button onclick="changescreentoAbout()" class="btn btn-outline-primary btn-sm">Learn More</button>
                     </div>
                 </div><!-- End of Row -->           
             </div><!-- End of Container-->      
@@ -124,7 +124,7 @@
                             While defining and formulating your sustainability roadmap, we assess & audit the existing state of affairs, present observations, get stakeholder buy-in and execute the agreed strategy. 
                             We see through the implementation of sustainability results in meeting tangible and intangible goals.
                           </p> 
-                          <p id="clickable1" onclick="changetofashionbrandsscreen()" style="color:blue">Read More</p>
+                          <p id="clickable1" onclick="changetosectorssscreen()" style="color:blue">Read More</p>
                        
                         </div>
                 </div>
@@ -163,7 +163,7 @@
 
                     <p style="font-style: italic;">“I am committed to make sustainability simple,
                         practical and result-oriented for businesses.”</p>
-                    <button class="btn btn-outline-primary btn-sm">Learn More</button>
+                    <button onclick="changescreentoAbout()" class="btn btn-outline-primary btn-sm">Learn More</button>
                 </div>
             </div>
             <!-- End of Row -->
@@ -363,7 +363,7 @@
         </div> 
         <div class="col-sm-10 col-md-4 m-auto">
 
-                <button style="background-color: greenyellow; padding:10px">View All Articles</button>
+                <button onclick="changeto404()" style="background-color: greenyellow; padding:10px">View All Articles</button>
 
     </div>          
         </div><!-- End of Cotanier --> 
@@ -508,6 +508,26 @@
 
         function changescreentoSectors(){
         window.location = "sectors.html";
+        }
+
+        function changescreentoContact(){
+        window.location = "contactus.html";
+        }
+
+        function changescreentoAbout(){
+        window.location = "about.html";
+        }
+
+        function changetofashionbrandsscreen(){
+        window.location = "fashionIndustry.html";
+        }
+
+        function changetosectorssscreen(){
+        window.location = "sectors.html";
+        }
+
+        function changeto404(){
+        window.location = "404.html";
         }
 
     </script>
