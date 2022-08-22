@@ -11083,6 +11083,10 @@ nav.page-navbar .nav-item .btn {
   nav.page-navbar{
   background-color: rgba(255,255,255);
   }
+  nav.page-navbar .nav-item .nav-link {
+    color: #000;
+    font-weight: 400;
+  }
   nav.page-navbar .navbar-collapse {
     height: 0;
     overflow: hidden;
