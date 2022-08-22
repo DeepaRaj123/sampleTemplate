@@ -11080,13 +11080,15 @@ nav.page-navbar .nav-item .btn {
 }
 
 @media (max-width: 767.98px) {
+  nav.page-navbar{
+  background-color: white;
+  }
   nav.page-navbar .navbar-collapse {
     height: 0;
     overflow: hidden;
     opacity: 0;
     -webkit-transition: all 0.3s linear 0s;
     transition: all 0.3s linear 0s;
-    background-color: white;
   }
   nav.page-navbar .navbar-collapse.show {
     height: auto;
