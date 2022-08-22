@@ -11081,7 +11081,7 @@ nav.page-navbar .nav-item .btn {
 
 @media (max-width: 767.98px) {
   nav.page-navbar{
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255);
   }
   nav.page-navbar .navbar-collapse {
     height: 0;
