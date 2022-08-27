@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Creative Design landing page.">
+    <meta name="description" content="With our Holistic Sustainable Consulting, we help individuals, businesses, governments, and non-governmental organizations across sectors in defining and realizing their sustainability goals.">
     <meta name="author" content="Devcrud">
     <title>Mindfully Sustainable</title>
 
@@ -55,7 +55,7 @@
                          </div>                    </li>
                  
                     <li class="nav-item">
-                        <a class="nav-link" href="404.html">Resources</a>
+                        <a class="nav-link" href="resources.html">Resources</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Us</a>
@@ -203,7 +203,7 @@
                     </li>
                     <li class="list-body">
                         <p style="color:rgb(217, 208, 208) ;"><i class="ti-location-pin" ></i> Correspondence address                        </p>
-                        <p style="color:rgb(217, 208, 208) ;"><i class="ti-location"></i> 12345 Fake ST NoWhere AB Country</p>
+                        <p style="color:rgb(217, 208, 208) ;"><i class="ti-location"></i> 8 Swallows Court, Vickers Lane</p>
                         <p style="color:rgb(217, 208, 208) ;"><i class="ti-location" ></i> Dartford,DA1 5FG                        </p>
                     </li>
                 </ul> 
@@ -225,6 +225,29 @@
     <!-- Creative Design js -->
     <script src="assets/js/creative-design.js"></script>
 
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-storage.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database-compat.js"></script>
+
+    <script>
+       // Your web app's Firebase configuration
+
+    const firebaseConfig = {
+    apiKey: "AIzaSyCIFt4yXsN5wbcACl2mzmOOIp45uoBHROM",
+    authDomain: "mindfully-sustainable.firebaseapp.com",
+    databaseURL: "https://mindfully-sustainable-default-rtdb.firebaseio.com/",
+    projectId: "mindfully-sustainable",
+    storageBucket: "mindfully-sustainable.appspot.com",
+    messagingSenderId: "805727032537",
+    appId: "1:805727032537:web:c45f8ba06cc43eff755ac8"
+  };
+       // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+       var db = firebase.firestore();
+    </script>
+
     <script>
         formContainer = document.getElementById("formContainer");
         announcementButton = document.getElementById("announcementButton");
@@ -245,5 +268,47 @@
  }
 
 </script>
+
+<script>
+
+
+var testimonialsRef;
+testimonialsRef = db.collection("testimonials");
+testimonialsRef
+.get()
+.then((snapshot) => {
+    const testimonials = snapshot.docs.map((doc) => ({
+    id: doc.id,
+    ...doc.data(),
+    }));
+
+let i = 0; // current slide
+let j = testimonials.length; // total slides
+
+let testimonialContainer = document.getElementById("testimonial-container");
+document.getElementById("prev").addEventListener("click", prev);
+document.getElementById("next").addEventListener("click", next);
+
+function next() {
+	i = (j + i + 1) % j;
+	displayTestimonial();
+}
+
+function prev() {
+	i = (j + i - 1) % j;
+	displayTestimonial();
+}
+let displayTestimonial = () => {
+	testimonialContainer.innerHTML = `
+        <p>${testimonials[i].testimonial}</p>
+         <img src=${"./assets/imgs/avatar1.png"}></img>
+        <h3>${testimonials[i].name}</h3>
+        <h6>${testimonials[i].job}</h6>
+        `;
+};
+window.onload = displayTestimonial();
+})
+</script>
+
 </body>
 </html>
