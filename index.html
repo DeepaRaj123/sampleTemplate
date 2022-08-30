@@ -612,8 +612,8 @@ today = dd + '/' + mm + '/' + yyyy;
       id: doc.id,
       ...doc.data(),
     }));
-    console.log(data)
-    if(!data){
+    console.log(data.length)
+    if(data.length==0){
         let newQuery = {
     email: email,
     subscribeDate : today
